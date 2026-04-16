@@ -516,21 +516,26 @@
 //      4. Go to Firestore Database → Create database (test mode)
 //      5. Paste your config values here
 // ────────────────────────────────────────────────────────────
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
-import {
-  getFirestore, collection, addDoc, query,
-  orderBy, onSnapshot, deleteDoc, getDocs,
-  serverTimestamp, doc, setDoc, getDoc, onSnapshot as onDocSnapshot
-} from "https://www.gstatic.com/firebasejs/12.12.0/firebase-firestore.js";
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-const firebaseConfig = {
-  apiKey:            "AIzaSyDe67o6kr7rQYL_5wXrwwATF00QewYP1qU",
-  authDomain:        "monograph-80f8b.firebaseapp.com",
-  projectId:         "monograph-80f8b",
-  storageBucket:     "monograph-80f8b.firebasestorage.app",
-  messagingSenderId: "650199774235",
-  appId:             "1:650199774235:web:0ba1a38f08d37d57d974be"};
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA7vzVt4iYPiUHTc5Jhs_fapu4ylsMNKb8",
+    authDomain: "news-eb672.firebaseapp.com",
+    databaseURL: "https://news-eb672-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "news-eb672",
+    storageBucket: "news-eb672.firebasestorage.app",
+    messagingSenderId: "812948185160",
+    appId: "1:812948185160:web:8ccda64220f330d4fdf87d"
+  };
 
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 // ────────────────────────────────────────────────────────────
 //  APP STATE
 // ────────────────────────────────────────────────────────────
